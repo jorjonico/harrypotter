@@ -24,9 +24,9 @@ const producto9 = new Producto(9, "Ave", "Unisex", "Niños", "azul", 500, 50, `/
 const producto10 = new Producto(10, "Jaguar", "Unisex", "Niños", "negro", 500, 50, `/img/negro.webp`)
 
 const productos = [producto1, producto2, producto3, producto4, producto5, producto6, producto8, producto9,]
-
+//Accedo a un elemento HTML mediante su ID
 const divProductos = document.getElementById("productos")
-
+//recorro el array con forEach, luego innerHTML el navegador lo interpreta como código HTML y genera nuevos nodos con su contenido dentro del elemento seleccionado
 productos.forEach(productoArray => {
     divProductos.innerHTML += `
         <div class="card text-center card_color productos" id="producto${productoArray.id}" style="width: 18rem;">
