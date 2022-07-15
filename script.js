@@ -33,7 +33,7 @@ productos.forEach(productoArray => {
         <img src="${productoArray.imagen}" class="card-img-top" alt="Protectores deportivos">
         <div class="card-body">
         <h5 class="card-title">Protector: ${productoArray.nombre}</h5>
-        <p class="card-text p">Género: ${productoArray.genero} | ${productoArray.color}</p>
+        <p class="card-text p">Género: ${productoArray.genero} | Color: ${productoArray.color}</p>
         <p class="card-text precio">Precio: $${productoArray.precio}</p>
         <button type="button" class="btn btn-outline-secondary">Comprar</button>
         </div>
