@@ -3,7 +3,7 @@ const divPersonaje = document.getElementById("personajes");
 const input1 = document.querySelector('.form select');
 
 // 
-async function todosPersonajes() {
+/* async function todosPersonajes() {
     const pers = await fetch('http://hp-api.herokuapp.com/api/characters')
     const persParseados = await pers.json()
 
@@ -22,9 +22,9 @@ async function todosPersonajes() {
             </div>
         </div>
         `
-})}
+})} */
 
-/* function personajesTodos () {
+function todosPersonajes() {
     fetch(ApiPotter)
     .then(response => response.json())
     .then(data => data.forEach((persona, indice) => {
@@ -38,8 +38,8 @@ async function todosPersonajes() {
         </div>
         `
     }))
-} */
-async function estudiantes () {
+}
+/* async function estudiantes () {
     const estu = await fetch('http://hp-api.herokuapp.com/api/characters/students')
     const estuParseados = await estu.json()
 
@@ -58,9 +58,9 @@ async function estudiantes () {
             </div>
         </div>
         `
-    })}
+    })} */
 
-/* async function estudiantes (){
+async function estudiantes (){
     fetch('http://hp-api.herokuapp.com/api/characters/students')
     .then(response => response.json())
     .then(data => data.forEach((persona, indice) => {
@@ -79,9 +79,9 @@ async function estudiantes () {
         </div>
         `
     }))
-} */
+}
 
-async function profesores () {
+/* async function profesores () {
     const profe = await fetch('http://hp-api.herokuapp.com/api/characters/staff')
     const profeParseados = await profe.json()
 
@@ -100,9 +100,9 @@ async function profesores () {
             </div>
         </div>
         `
-    })}
+    })} */
 
-/* function profesores (){
+function profesores (){
     fetch('http://hp-api.herokuapp.com/api/characters/staff')
     .then(response => response.json())
     .then(data => data.forEach((persona, indice) => {
@@ -121,9 +121,9 @@ async function profesores () {
             </div>
             `
     }))
-} */
+}
 
-async function mostrarCasa(house){
+/* async function mostrarCasa(house){
     const casa = await fetch('http://hp-api.herokuapp.com/api/characters/house/' + house)
     const casaParseados = await casa.json()
 
@@ -142,9 +142,9 @@ async function mostrarCasa(house){
             </div>
         </div>
         `
-    })}
+    })} */
 
-/* function mostrarCasa(house){
+function mostrarCasa(house){
     fetch('http://hp-api.herokuapp.com/api/characters/house/' + house)
     .then(response => response.json())
     .then(data => data.forEach((persona, indice) => {
@@ -163,7 +163,7 @@ async function mostrarCasa(house){
         </div>
         `
     }))
-} */
+}
 
 
 // desarrollo el evento del selector, deacuerdo a las opciones de busqueda con un if/ else
