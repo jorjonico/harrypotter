@@ -25,7 +25,7 @@ const input1 = document.querySelector('.form select');
 })} */
 
 function todosPersonajes() {
-    fetch(ApiPotter)
+    fetch("http://hp-api.herokuapp.com/api/characters")
     .then(response => response.json())
     .then(data => data.forEach((persona, indice) => {
         divPersonaje.innerHTML += `
@@ -199,4 +199,4 @@ input1.addEventListener("change", () =>{
     }
 })
 
-estudiantes ()
+todosPersonajes()
