@@ -25,7 +25,7 @@ const input1 = document.querySelector('.form select');
 })} */
 
 function todosPersonajes() {
-    fetch("http://hp-api.herokuapp.com/api/characters")
+    fetch('https://hp-api.herokuapp.com/api/characters')
     .then(response => response.json())
     .then(data => data.forEach((persona, indice) => {
         divPersonaje.innerHTML += `
