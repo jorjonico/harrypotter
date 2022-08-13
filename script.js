@@ -24,23 +24,9 @@ async function todosPersonajes() {
         `
 })}
 
-/* function todosPersonajes() {
-    fetch('https://hp-api.herokuapp.com/api/characters')
-    .then(response => response.json())
-    .then(data => data.forEach((persona, indice) => {
-        divPersonaje.innerHTML += `
-        <div class="card text-center card_color productos" id="persona${indice}" style="width: 18rem;">
-            <img src="${persona.image}" class="card-img-top" alt="Personaje sin imágen">
-            <div class="card-body">
-                <h5 class="card-title">Nombre: ${persona.name}</h5>
-                <p class="card-text p">Casa: ${persona.house} | Actor: ${persona.actor}</p>
-            </div>
-        </div>
-        `
-    }))
-} */
-/* async function estudiantes () {
-    const estu = await fetch('http://hp-api.herokuapp.com/api/characters/students')
+
+async function estudiantes () {
+    const estu = await fetch('https://hp-api.herokuapp.com/api/characters/students')
     const estuParseados = await estu.json()
 
     estuParseados.forEach((persona) => {
@@ -58,31 +44,12 @@ async function todosPersonajes() {
             </div>
         </div>
         `
-    })} */
+    })}
 
-async function estudiantes (){
-    fetch('http://hp-api.herokuapp.com/api/characters/students')
-    .then(response => response.json())
-    .then(data => data.forEach((persona, indice) => {
-        divPersonaje.innerHTML += `
-        <div class="card text-center mb-3 productos" style="width: 18rem;">
-            <h5 class="card-header">${persona.name}</h5>
-            <div class="card-body">
-                <p class="card-title">Casa: ${persona.house}</p>
-            </div>
-            <img src="${persona.image}" class="card-img-top" alt="">
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            </img>
-            <div class="card-body">
-                <p class="card-text">Intérprete: ${persona.actor}</p>
-            </div>
-        </div>
-        `
-    }))
-}
 
-/* async function profesores () {
-    const profe = await fetch('http://hp-api.herokuapp.com/api/characters/staff')
+
+async function profesores () {
+    const profe = await fetch('https://hp-api.herokuapp.com/api/characters/staff')
     const profeParseados = await profe.json()
 
     profeParseados.forEach((persona) => {
@@ -100,31 +67,11 @@ async function estudiantes (){
             </div>
         </div>
         `
-    })} */
+    })}
 
-function profesores (){
-    fetch('http://hp-api.herokuapp.com/api/characters/staff')
-    .then(response => response.json())
-    .then(data => data.forEach((persona, indice) => {
-            divPersonaje.innerHTML += `
-            <div class="card text-center mb-3 productos" style="width: 18rem;">
-            <h5 class="card-header">${persona.name}</h5>
-            <div class="card-body">
-                <p class="card-title">Casa: ${persona.house}</p>
-            </div>
-            <img src="${persona.image}" class="card-img-top" alt="">
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            </img>
-            <div class="card-body">
-                <p class="card-text">Intérprete: ${persona.actor}</p>
-            </div>
-            </div>
-            `
-    }))
-}
 
-/* async function mostrarCasa(house){
-    const casa = await fetch('http://hp-api.herokuapp.com/api/characters/house/' + house)
+async function mostrarCasa(house){
+    const casa = await fetch('https://hp-api.herokuapp.com/api/characters/house/' + house)
     const casaParseados = await casa.json()
 
     casaParseados.forEach((persona) => {
@@ -142,29 +89,7 @@ function profesores (){
             </div>
         </div>
         `
-    })} */
-
-function mostrarCasa(house){
-    fetch('http://hp-api.herokuapp.com/api/characters/house/' + house)
-    .then(response => response.json())
-    .then(data => data.forEach((persona, indice) => {
-        divPersonaje.innerHTML += `
-        <div class="card text-center mb-3 productos" style="width: 18rem;">
-            <h5 class="card-header">${persona.name}</h5>
-            <div class="card-body">
-                <p class="card-title">Casa: ${persona.house}</p>
-            </div>
-            <img src="${persona.image}" class="card-img-top" alt="">
-            <rect width="100%" height="100%" fill="#868e96"></rect>
-            </img>
-            <div class="card-body">
-                <p class="card-text">Intérprete: ${persona.actor}</p>
-            </div>
-        </div>
-        `
-    }))
-}
-
+    })}
 
 // desarrollo el evento del selector, deacuerdo a las opciones de busqueda con un if/ else
 input1.addEventListener("change", () =>{
