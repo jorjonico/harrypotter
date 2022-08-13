@@ -3,8 +3,8 @@ const divPersonaje = document.getElementById("personajes");
 const input1 = document.querySelector('.form select');
 
 // 
-/* async function todosPersonajes() {
-    const pers = await fetch('http://hp-api.herokuapp.com/api/characters')
+async function todosPersonajes() {
+    const pers = await fetch('https://hp-api.herokuapp.com/api/characters')
     const persParseados = await pers.json()
 
     persParseados.forEach((persona) => {
@@ -22,9 +22,9 @@ const input1 = document.querySelector('.form select');
             </div>
         </div>
         `
-})} */
+})}
 
-function todosPersonajes() {
+/* function todosPersonajes() {
     fetch('https://hp-api.herokuapp.com/api/characters')
     .then(response => response.json())
     .then(data => data.forEach((persona, indice) => {
@@ -38,7 +38,7 @@ function todosPersonajes() {
         </div>
         `
     }))
-}
+} */
 /* async function estudiantes () {
     const estu = await fetch('http://hp-api.herokuapp.com/api/characters/students')
     const estuParseados = await estu.json()
